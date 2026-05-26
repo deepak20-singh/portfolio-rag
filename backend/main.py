@@ -11,7 +11,7 @@ import os
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import StreamingResponse
+from fastapi.responses import Response, StreamingResponse
 from groq import Groq
 from pydantic import BaseModel
 
@@ -29,14 +29,29 @@ if not GROQ_API_KEY:
 
 groq_client = Groq(api_key=GROQ_API_KEY)
 
+# ── CORS origins ──────────────────────────────────────────────────────────────
+CORS_ORIGINS = [
+    "https://myportfolio-dun-psi.vercel.app",
+    "http://localhost:5173",
+    "http://localhost:3000",
+]
+
+CORS_HEADERS = {
+    "Access-Control-Allow-Origin":  "https://myportfolio-dun-psi.vercel.app",
+    "Access-Control-Allow-Methods": "POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Max-Age":       "86400",
+}
+
 # ── App ───────────────────────────────────────────────────────────────────────
 app = FastAPI(title="Portfolio RAG Chatbot API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],   # tighten to your portfolio domain before going live
-    allow_methods=["GET", "POST"],
+    allow_origins=CORS_ORIGINS,
+    allow_methods=["*"],
     allow_headers=["*"],
+    expose_headers=["*"],
 )
 
 # ── Schemas ───────────────────────────────────────────────────────────────────
@@ -44,19 +59,26 @@ class ChatRequest(BaseModel):
     question: str
 
 # ── Prompt builder ────────────────────────────────────────────────────────────
-SYSTEM_PROMPT = """You are a helpful assistant embedded in a software engineer's portfolio website. 
+SYSTEM_PROMPT = """You are a helpful assistant embedded in a software engineer's portfolio website.
 Your job is to answer questions about the engineer using ONLY the context provided below.
 
 ### STRICT GROUND RULES:
 1. USE ONLY THE PROVIDED CONTEXT. Do not use any outside knowledge, assumptions, or extrapolations.
 2. ADOPT THE PERSONA: Speak in the first person ("I", "my", "me") as if you are the engineer themselves.
 3. TONE: Be concise, friendly, grounded, and professional.
-4. ABSOLUTE TRUTH: If the answer cannot be directly and fully verified by the provided context, you MUST reply exactly with: 
+4. ABSOLUTE TRUTH: If the answer cannot be directly and fully verified by the provided context, you MUST reply exactly with:
    "I don't have that information — feel free to reach out via the contact form."
 5. NO HALLUCINATIONS: Never invent dates, technologies, projects, or experiences. If it isn't explicitly written below, it does not exist.
 
 ### EVALUATION STEP (Internal Monologue):
-Before generating your final response, silently verify if every single fact you are about to state is explicitly written in the context. If even a small detail is missing, fall back to the default refusal message."""
+Before generating your final response, silently verify if every single fact you are about to state is explicitly written in the context. If even a small detail is missing, fall back to the default refusal message.
+
+### FORMATTING:
+- Use **bold** for key technologies, metrics, and important terms
+- Use bullet points for any list of 3 or more items
+- Keep responses concise — 2 to 5 sentences or a short bullet list
+- Never use headers (##) — this is a chat widget, not a document
+- Never use code blocks unless specifically asked about code"""
 
 def build_prompt(question: str, chunks: list[dict]) -> list[dict]:
     context = "\n\n---\n\n".join(
@@ -119,7 +141,9 @@ def chat(req: ChatRequest):
         stream_response(q),
         media_type="text/event-stream",
         headers={
-            "Cache-Control": "no-cache",
-            "X-Accel-Buffering": "no",   # disables Nginx buffering on Render
+            "Cache-Control":                "no-cache",
+            "X-Accel-Buffering":            "no",
+            "Access-Control-Allow-Origin":  "https://myportfolio-dun-psi.vercel.app",
+            "Access-Control-Allow-Headers": "Content-Type",
         },
     )

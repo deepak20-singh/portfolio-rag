@@ -1,9 +1,9 @@
 services:
   - type: web
     name: portfolio-rag-api
-    runtime: docker
-    dockerfilePath: ./backend/Dockerfile
-    dockerContext: ./backend
+    runtime: image
+    image:
+      url: docker.io/deepaksiingh20/portfolio-rag:1.0.0
     envVars:
       - key: GROQ_API_KEY
         sync: false           # paste your key in the Render dashboard
@@ -11,3 +11,5 @@ services:
         value: llama-3.3-70b-versatile
       - key: TOP_K
         value: "5"
+      - key: PORT
+        value: "8000"
