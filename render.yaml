@@ -1,14 +1,12 @@
 services:
   - type: web
     name: portfolio-rag-api
-    runtime: python
-    pythonVersion: "3.11.9"
-    rootDir: backend
-    buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
     envVars:
       - key: GROQ_API_KEY
-        sync: false           # you'll paste this in the Render dashboard
+        sync: false           # paste your key in the Render dashboard
       - key: GROQ_MODEL
         value: llama-3.3-70b-versatile
       - key: TOP_K
