@@ -1,0 +1,134 @@
+[
+  {
+    "text": "# About\n\n## Role\nPython backend engineer with 3+ years of experience building scalable backend systems\nand integrating AI capabilities into production applications.\n\n## Current Position\nSoftware Engineer at Openstream.ai (AI and Backend Systems), Bengaluru, India.\nOctober 2022 – Present.",
+    "source": "bio.md"
+  },
+  {
+    "text": "penstream.ai (AI and Backend Systems), Bengaluru, India.\nOctober 2022 – Present. ## What I Work On\n- High-concurrency Python APIs (FastAPI/Flask) sustaining sub-200ms response times\n- LLM inference pipelines — prompt engineering, tool calling, structured output validation\n- RAG pipelines and vector-based retrieval in production\n- Real-time systems: WebRTC, Redis Pub/Sub, event-driven microservices\n- Docker deployments on AWS and Azure",
+    "source": "bio.md"
+  },
+  {
+    "text": "Redis Pub/Sub, event-driven microservices\n- Docker deployments on AWS and Azure ## Philosophy\n\"I write backend services that disappear into the product — fast, quiet, and impossible\nto break. I care about the boring fundamentals — clean architecture, code reviews,\nSLOs that hold — because that's what lets the interesting parts ship.\"\n\n## Based In\nBengaluru, India (IST / UTC+5:30)\n\n## Availability\nActively looking for new opportunities. Open to remote roles and relocation.",
+    "source": "bio.md"
+  },
+  {
+    "text": "# Contact & Links\n\n## Professional Links\n- LinkedIn: https://linkedin.com/in/deepaksiingh\n- GitHub: https://github.com/deepak20-singh\n- Portfolio: https://myportfolio-dun-psi.vercel.app\n\n## Location\nBengaluru, India",
+    "source": "contact.md"
+  },
+  {
+    "text": "Portfolio: https://myportfolio-dun-psi.vercel.app\n\n## Location\nBengaluru, India ## Job Preferences\n- Status: Actively looking for new opportunities\n- Open to: Fully remote roles, relocation\n- Target roles: Backend Engineer, AI/Backend Engineer, Python Developer,\n  Software Engineer (AI/ML / real-time systems)\n- Best fit: Companies building AI-powered products, LLM-backed APIs,\n  or real-time infrastructure\n\n## How to Reach\nUse the contact form on the portfolio or reach out via LinkedIn for the quickest response.",
+    "source": "contact.md"
+  },
+  {
+    "text": "# Education\n\n## Integrated B.Tech + M.Tech — Artificial Intelligence and Robotics\nInstitution: Gautam Buddha University, Greater Noida, India\nDuration: 2017 – 2022\nProgramme: 5-year integrated degree (Bachelor's + Master's combined)\nSpecialisation: Artificial Intelligence and Robotics\n\n## Senior Secondary School\nInstitution: M.P.V.M. Ganga Gurukulam, Prayagraj, India\nDuration: July 2014 – May 2016",
+    "source": "education.md"
+  },
+  {
+    "text": "# Work Experience\n\n## Software Engineer — Openstream.ai\nDuration: October 2022 – Present (3+ years)\nLocation: Bengaluru, India\nDomain: AI and Backend Systems",
+    "source": "experience.md"
+  },
+  {
+    "text": "2 – Present (3+ years)\nLocation: Bengaluru, India\nDomain: AI and Backend Systems ### Responsibilities & Achievements\n- Designed Python RESTful APIs (FastAPI/Flask) as integration layers between backend\n  services and AI components. Sub-200ms response times under high concurrency.\n- Built LLM-based inference pipelines: prompt engineering, tool calling, structured\n  output validation for real-time AI features.\n- Designed modular microservices and event-driven workflows using SOLID principles\n  and clean architecture across distributed services.",
+    "source": "experience.md"
+  },
+  {
+    "text": "ows using SOLID principles\n  and clean architecture across distributed services. - Re-engineered Redis Pub/Sub and caching layer — reduced P95 latency by 40%,\n  improved throughput stability under peak load.\n- Optimized Docker-based deployment workflows — reduced image sizes by 35%,\n  supporting 99.9% uptime SLA on cloud-deployed services.\n- Built and maintained Git-based CI/CD pipelines for automated build, test,\n  and deployment of backend and AI services.\n- Led code reviews, architectural planning, and technical discussions. Reduced",
+    "source": "experience.md"
+  },
+  {
+    "text": ".\n- Led code reviews, architectural planning, and technical discussions. Reduced mean time to recovery (MTTR) through clean coding practices.",
+    "source": "experience.md"
+  },
+  {
+    "text": "mean time to recovery (MTTR) through clean coding practices. ### Key Numbers\n- Sub-200ms API response time under load\n- 40% P95 latency reduction (Redis redesign)\n- 10,000+ messages/hour at sub-150ms\n- 35% Docker image size reduction\n- 99.9% uptime SLA",
+    "source": "experience.md"
+  },
+  {
+    "text": "# FAQ — Common Recruiter Questions\n\n## Experience & Background\n\nQ: How many years of experience do you have?\nA: 3+ years as a Software Engineer at Openstream.ai (Oct 2022–Present), plus a\n   5-year integrated AI/Robotics degree (2017–2022).\n\nQ: What is your current company and role?\nA: Software Engineer at Openstream.ai, working on AI and backend systems —\n   LLM pipelines, real-time avatar infrastructure, and microservices.",
+    "source": "faq.md"
+  },
+  {
+    "text": "systems —\n   LLM pipelines, real-time avatar infrastructure, and microservices. Q: Are you from a product-based or service-based company?\nA: Product-based. Openstream.ai builds AI-powered conversational avatar products.\n\nQ: What level are you at — junior, mid, senior?\nA: Mid-to-senior. With 3+ years owning end-to-end features, leading code reviews,\n   and making architectural decisions in a product company, I operate at that level.\n\n## Skills & Stack",
+    "source": "faq.md"
+  },
+  {
+    "text": "ural decisions in a product company, I operate at that level.\n\n## Skills & Stack Q: What is your strongest programming language?\nA: Python. Used daily for FastAPI/Flask backends, LLM integration, data pipelines,\n   and automation. I also work with TypeScript and JavaScript.\n\nQ: Do you have LLM / AI experience?\nA: Yes — it is a core part of my role. I've built LLM inference pipelines, RAG\n   systems, prompt engineering frameworks, structured output validation, and\n   tool-calling agents in production.",
+    "source": "faq.md"
+  },
+  {
+    "text": "meworks, structured output validation, and\n   tool-calling agents in production. Q: Do you have experience with RAG systems?\nA: Extensively. Built RAG pipelines in production (40% hallucination reduction).\n   Also built a hybrid RAG system (Qdrant + BM25 + RRF) as a public GitHub project.\n\nQ: Do you know React / frontend?\nA: My primary strength is backend, but I can work full-stack. I built this portfolio\n   in React + TypeScript, and vibecheck has a full React frontend I shipped.",
+    "source": "faq.md"
+  },
+  {
+    "text": "lio\n   in React + TypeScript, and vibecheck has a full React frontend I shipped. Q: Do you have cloud/DevOps experience?\nA: Yes — AWS (EC2, S3) and Microsoft Azure, Docker containerisation, and CI/CD\n   pipelines. Maintained 99.9% uptime SLA on cloud-deployed services.\n\nQ: Do you know vector databases?\nA: Yes. I've worked with Qdrant (used in loan-RAG-assistant), and have experience\n   with vector-based retrieval in production document extraction pipelines.\n\n## Availability & Preferences\n\nQ: Are you currently open to new opportunities?\nA: Yes, actively looking.",
+    "source": "faq.md"
+  },
+  {
+    "text": "ences\n\nQ: Are you currently open to new opportunities?\nA: Yes, actively looking. Q: Are you open to remote work?\nA: Yes, fully open to remote roles.\n\nQ: Are you open to relocation?\nA: Yes, open to relocation for the right opportunity.\n\nQ: What kind of roles are you targeting?\nA: Backend Engineer, AI/Backend Engineer, or Python Developer — ideally at companies\n   building AI-powered products, LLM-backed APIs, or real-time systems.",
+    "source": "faq.md"
+  },
+  {
+    "text": "ompanies\n   building AI-powered products, LLM-backed APIs, or real-time systems. Q: What domains interest you?\nA: Conversational AI, real-time systems, document intelligence, developer tooling,\n   and any product where the backend is genuinely hard.\n\n## Projects\n\nQ: What is your most impactful project?\nA: The 3D AI Avatar Interaction System — I engineered the entire AI backend handling\n   10,000+ messages/hour with sub-150ms latency, LLM integration, and WebRTC.",
+    "source": "faq.md"
+  },
+  {
+    "text": "ng\n   10,000+ messages/hour with sub-150ms latency, LLM integration, and WebRTC. Q: Do you have any live, publicly accessible projects?\nA: Yes — VibeCheck (vibecheck-frontend-opal.vercel.app) is live. It does real-time\n   emotion detection via webcam using MediaPipe + Groq LLM.",
+    "source": "faq.md"
+  },
+  {
+    "text": "e. It does real-time\n   emotion detection via webcam using MediaPipe + Groq LLM. Q: Do you have public GitHub projects?\nA: Yes — github.com/deepak20-singh. Notable repos:\n   - vibecheck_frontend / vibecheck_backend: full-stack emotion detection app\n   - loan-RAG-assistant: hybrid RAG system (Qdrant + BM25 + RRF)\n   - portfolio: this portfolio, built with React + TypeScript + Three.js",
+    "source": "faq.md"
+  },
+  {
+    "text": "# Projects\n\n## 1. VibeCheck — Real-time Emotion Detector (Featured)\nRole: Full-stack | Year: 2025\nStack: React, TypeScript, FastAPI, MediaPipe, WebSockets, Groq LLM, Recharts\nLive Demo: https://vibecheck-frontend-opal.vercel.app\nGitHub: https://github.com/deepak20-singh/vibecheck_frontend",
+    "source": "projects.md"
+  },
+  {
+    "text": "end-opal.vercel.app\nGitHub: https://github.com/deepak20-singh/vibecheck_frontend Webcam-based real-time emotion detection and engagement scoring. Dual processing\nmodes: MediaPipe face landmarks (in-browser WASM, ~8fps, instant) and a Groq-powered\nvision LLM (every 2 seconds, semantic depth). Live emotion timeline visualization.",
+    "source": "projects.md"
+  },
+  {
+    "text": "sion LLM (every 2 seconds, semantic depth). Live emotion timeline visualization. Highlights:\n- Dual-stream pipeline: MediaPipe 8fps + Groq LLM running in parallel\n- Tracks 10 distinct emotions simultaneously with head pose detection (ZYX Euler)\n- Privacy-first: video stays on-device, frames processed in-memory and discarded\n- FastAPI backend with WebSocket sessions, IP-based rate limiting, daily quotas\n- Zero persistent storage — all processing client-side or ephemeral\n\n---",
+    "source": "projects.md"
+  },
+  {
+    "text": "quotas\n- Zero persistent storage — all processing client-side or ephemeral\n\n--- ## 2. Insurance Document Extraction Platform (Flagship)\nRole: Backend Engineer | Year: 2024–Present\nStack: Python, FastAPI, LLMs, Docker, AWS, Vector Search\n\nFastAPI microservice that extracts structured JSON from insurance documents using\nself-hosted LLMs, automating document understanding workflows for downstream systems.",
+    "source": "projects.md"
+  },
+  {
+    "text": "hosted LLMs, automating document understanding workflows for downstream systems. Highlights:\n- Multi-stage pipeline: conversion → classification → extraction → post-processing\n- Supports PDF, Excel, and DOC inputs with modular, testable Python components\n- Provider-agnostic LLM integration layer (sync/async, concurrency control)\n- Vector-based search + prompt-driven extraction for accurate structured outputs\n- Containerized on Docker, deployed to AWS\n\n---\n\n## 3. 3D AI Avatar Interaction System\nRole: Lead Backend | Year: 2023–Present\nStack: FastAPI, LLMs, WebRTC, AWS, Docker",
+    "source": "projects.md"
+  },
+  {
+    "text": "ole: Lead Backend | Year: 2023–Present\nStack: FastAPI, LLMs, WebRTC, AWS, Docker Engineered the AI backend for a real-time conversational LLM avatar. Prompt engineering,\nstructured output validation, and WebRTC for low-latency interactions.\n\nHighlights:\n- 10,000+ messages/hour at sub-150ms latency, horizontally scalable on AWS\n- LLM output validation + RAG pipelines → 30% improvement in response reliability\n- Dockerized microservices for low latency and high availability\n\n---",
+    "source": "projects.md"
+  },
+  {
+    "text": "eliability\n- Dockerized microservices for low latency and high availability\n\n--- ## 4. Real-Time Session Management Dashboard\nRole: Backend Engineer | Year: 2023\nStack: Flask, Redis, MongoDB, Microservices, CI/CD\n\nOperator dashboard for live session telemetry. Redis-driven event bus,\nRAG-grounded responses, role-based access control.\n\nHighlights:\n- Sub-100ms dashboard refresh via Redis caching + Pub/Sub\n- RAG pipeline reduced hallucinations by 40%\n- RBAC for access governance\n- 25% drop in support tickets post-launch\n\n---",
+    "source": "projects.md"
+  },
+  {
+    "text": "40%\n- RBAC for access governance\n- 25% drop in support tickets post-launch\n\n--- ## 5. Health Monitoring Web Application\nRole: Full-stack | Year: 2023\nStack: LLMs, RAG, Flask, Redis, AWS, Azure\n\nEmotionally responsive medical dialogue system powered by an LLM avatar grounded\nin domain data. Multi-cloud deployment across AWS EC2 and Azure App Services.\n\nHighlights:\n- 10k+ message exchanges/hour via modular APIs\n- 35% faster event handling after Redis tuning\n- P95 < 150ms across the inference path\n- Multi-cloud: AWS EC2 + Azure App Services for high availability\n\n---",
+    "source": "projects.md"
+  },
+  {
+    "text": "ence path\n- Multi-cloud: AWS EC2 + Azure App Services for high availability\n\n--- ## 6. Loan RAG Assistant (GitHub)\nStack: Python, Qdrant, FastAPI, Redis, sentence-transformers, BM25, Groq (Llama-3)\nGitHub: https://github.com/deepak20-singh/loan-RAG-assistant\n\nRAG system for answering questions about small business loan policies. Uses hybrid\nretrieval — vector search + BM25 + Reciprocal Rank Fusion — for more accurate\nretrieval of lending-specific values (loan amounts, credit scores).",
+    "source": "projects.md"
+  },
+  {
+    "text": "ore accurate\nretrieval of lending-specific values (loan amounts, credit scores). Highlights:\n- Hybrid retrieval: semantic (Qdrant) + keyword (BM25) + Reciprocal Rank Fusion\n- sentence-transformers embeddings (BAAI/bge-small-en-v1.5)\n- Planned: Groq LLM integration, Pydantic structured outputs, Redis caching",
+    "source": "projects.md"
+  },
+  {
+    "text": "# Technical Skills\n\n## Programming Languages\nPython (primary), TypeScript, JavaScript, SQL\n\n## Frameworks & Libraries\nFastAPI, Flask, Angular, React\n\n## AI / ML Integration\nLLM Integration, Model Inference Pipelines, Prompt Engineering,\nStructured Output Validation, RAG Pipelines, Tool Calling,\nVector-based Retrieval, MediaPipe, Groq LLM",
+    "source": "skills.md"
+  },
+  {
+    "text": "dation, RAG Pipelines, Tool Calling,\nVector-based Retrieval, MediaPipe, Groq LLM ## Backend Engineering\nREST API Design, Microservices Architecture, Event-Driven Systems (Redis Pub/Sub),\nHigh-Concurrency Systems, WebRTC, WebSockets, Integration Layers\n\n## Databases & Data\nMongoDB (NoSQL), Redis (Caching & Pub/Sub), Qdrant (Vector DB),\nSQL, JSON Data Processing, Pandas, NumPy\n\n## DevOps & Cloud\nDocker, Containerization, CI/CD Pipelines, Git, AWS (EC2, S3), Microsoft Azure",
+    "source": "skills.md"
+  },
+  {
+    "text": "d\nDocker, Containerization, CI/CD Pipelines, Git, AWS (EC2, S3), Microsoft Azure ## Engineering Practices\nOOP, SOLID Principles, Clean Architecture, Design Patterns, Code Reviews, Agile/Scrum\n\n## Strongest Areas\nPython backend, LLM/AI integration, real-time systems (WebRTC + Redis + WebSockets),\nRAG pipelines, scalable Dockerized microservices on AWS/Azure.",
+    "source": "skills.md"
+  }
+]
