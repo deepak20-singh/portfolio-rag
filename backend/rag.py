@@ -20,7 +20,7 @@ MODEL_NAME  = "all-MiniLM-L6-v2"
 
 # ── Load once at import time ───────────────────────────────────────────────────
 print(f"[rag] Loading embedding model: {MODEL_NAME} ...")
-_model = SentenceTransformer(MODEL_NAME, local_files_only=True)
+_model = SentenceTransformer(MODEL_NAME)
 
 print(f"[rag] Loading FAISS index from: {INDEX_PATH}")
 _index = faiss.read_index(str(INDEX_PATH))
