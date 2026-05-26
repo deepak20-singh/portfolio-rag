@@ -15,12 +15,12 @@ from pathlib import Path
 
 import faiss
 import numpy as np
-from sentence_transformers import SentenceTransformer
+from fastembed import TextEmbedding
 
 # ── Config ────────────────────────────────────────────────────────────────────
 DATA_DIR   = Path(__file__).parent / "data"
 INDEX_DIR  = Path(__file__).parent / "index"
-MODEL_NAME = "all-MiniLM-L6-v2"
+MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 CHUNK_SIZE    = 500   # characters — safe for 256-token MiniLM limit
 CHUNK_OVERLAP = 80    # characters — context bleed between adjacent chunks
 MIN_CHUNK_LEN = 30    # discard tiny fragments (headers, blank lines, etc.)
@@ -107,17 +107,11 @@ def embed_and_save(chunks: list[dict]) -> None:
     INDEX_DIR.mkdir(parents=True, exist_ok=True)
 
     print(f"\nLoading model  : {MODEL_NAME}")
-    model = SentenceTransformer(MODEL_NAME)
+    model = TextEmbedding(MODEL_NAME)
 
     texts = [c["text"] for c in chunks]
     print(f"Embedding      : {len(texts)} chunks ...")
-    embeddings = model.encode(
-        texts,
-        show_progress_bar=True,
-        normalize_embeddings=True,   # L2-norm → inner product == cosine sim
-        batch_size=64,
-    )
-    embeddings = np.array(embeddings, dtype="float32")
+    embeddings = np.array(list(model.embed(texts)), dtype="float32")
 
     dim   = embeddings.shape[1]
     index = faiss.IndexFlatIP(dim)   # cosine similarity (vectors are normalised)

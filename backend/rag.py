@@ -10,17 +10,17 @@ from pathlib import Path
 
 import faiss
 import numpy as np
-from sentence_transformers import SentenceTransformer
+from fastembed import TextEmbedding
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
 INDEX_DIR   = Path(__file__).parent / "index"
 INDEX_PATH  = INDEX_DIR / "faiss.index"
 CHUNKS_PATH = INDEX_DIR / "chunks.json"
-MODEL_NAME  = "all-MiniLM-L6-v2"
+MODEL_NAME  = "sentence-transformers/all-MiniLM-L6-v2"
 
 # ── Load once at import time ───────────────────────────────────────────────────
 print(f"[rag] Loading embedding model: {MODEL_NAME} ...")
-_model = SentenceTransformer(MODEL_NAME)
+_model = TextEmbedding(MODEL_NAME)
 
 print(f"[rag] Loading FAISS index from: {INDEX_PATH}")
 _index = faiss.read_index(str(INDEX_PATH))
@@ -44,12 +44,8 @@ def search(query: str, top_k: int = 5) -> list[dict]:
             "score":  float  # cosine similarity (0–1, higher is better)
         }
     """
-    # Embed + normalise (matches how ingest.py built the index)
-    vector = _model.encode(
-        [query],
-        normalize_embeddings=True,
-    )
-    vector = np.array(vector, dtype="float32")
+    # Embed (fastembed normalises by default — matches how ingest.py built the index)
+    vector = np.array(list(_model.embed([query]))[0], dtype="float32").reshape(1, -1)
 
     # Search
     scores, indices = _index.search(vector, top_k)
